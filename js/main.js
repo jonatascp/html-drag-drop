@@ -11,7 +11,6 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
     var element = document.getElementById(data);
-    console.log(element);
     console.log(element.name);
     var nameImage = element.name;
     if (nameImage = 'images/server.png') {
