@@ -10,8 +10,8 @@
 	<p>Prateleira de componentes</p>
     <table class="table-prateleira">
         <tr>
-            <td><div><img id="drag1" src="images\server.png" draggable="true" ondragstart="drag(event)" width="50" height="50"></div></td>
-            <td><div><img id="drag2" src="images\database-icon.png" draggable="true" ondragstart="drag(event)" width="50" height="50"></div></td>
+            <td><div id="component_server"></div></td>
+            <td><div id="component_database"></div></td>
         </tr>
     </table>
 
@@ -80,5 +80,12 @@
     </table>
     
 </body>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function(){ 
+    	create_component('images/\server.png', 'component_server');
+    	create_component('images/\database-icon.png', 'component_database');
+	}, false);
+</script>
 
 </html>
