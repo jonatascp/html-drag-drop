@@ -21,6 +21,9 @@ function drop(ev) {
     if (nameImage == 'images/process-icon.png') {
     	create_component('images/\process-icon.png', 'component-process');
     }
+    if (nameImage == 'images/cloud-icon.png') {
+        create_component('images/\cloud-icon.png', 'component-cloud');
+    }
 }
 
 function create_component(srcImage, div) {
