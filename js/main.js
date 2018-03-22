@@ -11,7 +11,6 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
     var element = document.getElementById(data);
-    console.log(element.name);
     var nameImage = element.name;
     if (nameImage == 'images/server.png') {
     	create_component('images/\server.png', 'component-server');
@@ -26,5 +25,5 @@ function drop(ev) {
 
 function create_component(srcImage, div) {
     var idImage = new Date().getTime();
-    document.getElementById(div).innerHTML = "<img src=" + srcImage + " id=" + idImage + " name=" + srcImage + " draggable='true' ondragstart='drag(event)' width='50' height='50'></img>"
+    $('#'+div).html("<img src=" + srcImage + " id=" + idImage + " name=" + srcImage + " draggable='true' ondragstart='drag(event)' width='50' height='50'></img>");
 }

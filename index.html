@@ -2,92 +2,137 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css\main.css">
-    <script src="js\main.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <title>HTML Drag and Drop | Jonatas</title>
+    <!-- Bootstrap core CSS -->
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-	<p>Prateleira de componentes</p>
-    <table class="table-prateleira">
-        <tr>
-            <td><div id="component-server"></div></td>
-            <td><div id="component-database"></div></td>
-            <td><div id="component-process"></div></td>
-        </tr>
-    </table>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">HTML Drag and Drop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        <h1 class="mt-5">HTML Drag and Drop | Jonatas</h1>
+        <p class="lead">Use nossa plataforma para montar o ambiente da sua empresa, utiliza nossa paleta de componentes.</p>
+        <p><strong>Paleta de componentes</strong></p>
+        <table class="table table-bordered">
+            <tr>
+                <td>
+                    <div id="component-server"></div>
+                </td>
+                <td>
+                    <div id="component-database"></div>
+                </td>
+                <td>
+                    <div id="component-process"></div>
+                </td>
+            </tr>
+        </table>
+        <p><strong>Área disponível para planejamento</strong></p>
+        <table class="table table-bordered table-imagens">
+            <tr>
+                <td>
+                    <div id="div1_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div1_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div1_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div1_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div1_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div1_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="div2_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div2_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div2_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div2_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div2_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div2_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="div3_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div3_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div3_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div3_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div3_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+                <td>
+                    <div id="div3_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </td>
+            </tr>
+        </table>
+    </main>
 
-    <p>Arrastar os componentes para o local desejado</p>
-    <table class="table-imagens">
-        <tr>
-            <td>
-                <div id="div1_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div1_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div1_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div1_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div1_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div1_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="div2_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div2_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div2_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div2_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div2_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div2_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="div3_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div3_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div3_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div3_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div3_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-            <td>
-                <div id="div3_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </td>
-        </tr>
-    </table>
-    
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">HTML Drag and Drop | Jonatas</span>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
-
-<script>
-	document.addEventListener('DOMContentLoaded', function(){ 
-    	create_component('images/\server.png', 'component-server');
-    	create_component('images/\database-icon.png', 'component-database');
-    	create_component('images/\process-icon.png', 'component-process');
-	}, false);
-</script>
 
 </html>
