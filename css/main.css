@@ -2,3 +2,7 @@
 	width: auto;
     height: 50px;
 }
+
+.table-imagens tr td div#trash {
+    background-color: red;
+}

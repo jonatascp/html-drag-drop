@@ -24,6 +24,9 @@ function drop(ev) {
     if (nameImage == 'images/cloud-icon.png') {
         create_component('images/\cloud-icon.png', 'component-cloud');
     }
+
+    //Limpa a div de lixeira
+    $('#trash').html('');
 }
 
 function create_component(srcImage, div) {

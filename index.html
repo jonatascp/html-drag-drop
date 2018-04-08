@@ -43,7 +43,7 @@
     <!-- Begin page content -->
     <main role="main" class="container">
         <h1 class="mt-5">HTML Drag and Drop | Jonatas</h1>
-        <p class="lead">Use nossa plataforma para montar o ambiente da sua empresa, utiliza nossa <span class="badge badge-secondary">paleta de componentes</span>.</p>
+        <p class="lead">Use nossa plataforma para montar o ambiente da sua empresa, utilize nossa <span class="badge badge-secondary">paleta de componentes</span>.</p>
         <p><strong>Paleta de componentes</strong></p>
         <table class="table table-bordered">
             <tr>
@@ -61,10 +61,13 @@
                 </td>
             </tr>
         </table>
-        <p><strong>Área disponível para planejamento</strong></p>
+        <p><strong>Área disponível para planejamento</strong>&nbsp;<a href="index.html">Limpar</a></p>
         <table class="table table-bordered table-imagens" id="table-area">
 
         </table>
+        <br />
+        <p><strong>Resultado do processamento</strong>&nbsp;<input type="button" value="Processar" class="btn btn-primary" onclick="action();"/> </p>
+        <p id="resultado"></p>
     </main>
 
     <footer class="footer">
@@ -75,7 +78,8 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/drag-drop.js"></script>
+    <script src="js/action.js"></script>
     <script src="js/index.js"></script>
 </body>
 
