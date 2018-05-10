@@ -1,6 +1,6 @@
 function action() {
     console.log('>>action');
-    $('#table-area div>img').each(function () {
+    $('#div-area div>img').each(function () {
         printElement($(this)); 
     });
 }

@@ -45,37 +45,35 @@
         <h1 class="mt-5">HTML Drag and Drop | Jonatas</h1>
         <p class="lead">Use nossa plataforma para montar o ambiente da sua empresa, utilize nossa <span class="badge badge-secondary">paleta de componentes</span>.</p>
         <p><strong>Paleta de componentes</strong></p>
-        <table class="table table-bordered">
-            <tr>
-                <td>
-                    <div id="component-server"></div>
-                </td>
-                <td>
-                    <div id="component-database"></div>
-                </td>
-                <td>
-                    <div id="component-process"></div>
-                </td>
-                <td>
-                    <div id="component-cloud"></div>
-                </td>
-            </tr>
-        </table>
+        <div class="row" id="div-paleta">
+            <div id="component-server" class="col-sm">
+            </div>
+            <div id="component-database" class="col-sm">
+            </div>
+            <div id="component-process" class="col-sm">
+            </div>
+            <div id="component-cloud" class="col-sm">
+            </div>
+        </div>
         <p><strong>Área disponível para planejamento</strong>&nbsp;<a href="index.html">Limpar</a></p>
         <table class="table table-bordered table-imagens" id="table-area">
-
         </table>
         <br />
-        <p><strong>Resultado do processamento</strong>&nbsp;<input type="button" value="Processar" class="btn btn-primary" onclick="action();"/> </p>
+        
+        <div class="container" id="div-area">
+        </div>
+        <br />
+        
+
+        <p><strong>Resultado do processamento</strong>&nbsp;
+            <input type="button" value="Processar" class="btn btn-primary" onclick="action();" /> </p>
         <p id="resultado"></p>
     </main>
-
     <footer class="footer">
-      <div class="container">
-        <span class="text-muted">HTML Drag and Drop | Jonatas</span>
-      </div>
+        <div class="container">
+            <span class="text-muted">HTML Drag and Drop | Jonatas</span>
+        </div>
     </footer>
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/drag-drop.js"></script>
