@@ -24,6 +24,12 @@ function drop(ev) {
     if (nameImage == 'images/cloud-icon.png') {
         create_component('images/\cloud-icon.png', 'component-cloud');
     }
+    if (nameImage == 'images/arrow-down.png') {
+        create_component('images/\arrow-down.png', 'component-arrow-down');
+    }
+    if (nameImage == 'images/arrow-down-right.png') {
+        create_component('images/\arrow-down-right.png', 'component-arrow-down-right');
+    }
 
     //Limpa a div de lixeira
     $('#trash').html('');
