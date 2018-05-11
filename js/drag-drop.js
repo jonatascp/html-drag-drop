@@ -30,6 +30,9 @@ function drop(ev) {
     if (nameImage == 'images/arrow-down-right.png') {
         create_component('images/\arrow-down-right.png', 'component-arrow-down-right');
     }
+    if (nameImage == 'images/arrow-right.png') {
+        create_component('images/\arrow-right.png', 'component-arrow-right');
+    }
 
     //Limpa a div de lixeira
     $('#trash').html('');

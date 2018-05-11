@@ -5,6 +5,7 @@ $(document ).ready(function() {
     create_component('images/\cloud-icon.png', 'component-cloud');
     create_component('images/\arrow-down.png', 'component-arrow-down');
     create_component('images/\arrow-down-right.png', 'component-arrow-down-right');
+    create_component('images/\arrow-right.png', 'component-arrow-right');
     var qtdLinha = 6;
     var qtdColuna = 6;
 
