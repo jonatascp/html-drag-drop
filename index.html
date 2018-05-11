@@ -59,16 +59,18 @@
             <div id="component-arrow-down-right" class="col-sm">
             </div>
         </div>
-        <p><strong>Área disponível para planejamento</strong>&nbsp;<a href="index.html">Limpar</a></p>
-        <table class="table table-bordered table-imagens" id="table-area">
-        </table>
-        <br />
-        
-        <div class="container" id="div-area">
+        <div class="row">
+            <div class="col-sm-8">
+                <strong>Área disponível para planejamento</strong>&nbsp;<a href="index.html">Limpar Tudo</a>
+            </div>
+            <div class="col-sm-4">
+                <span>Lixeira:</span> <div id='trash' ondrop='drop(event)' ondragover='allowDrop(event)' class='col-sm'>&nbsp;</div>
+            </div>
         </div>
         <br />
-        
-
+        <div id="div-area">
+        </div>
+        <br />
         <p><strong>Resultado do processamento</strong>&nbsp;
             <input type="button" value="Processar" class="btn btn-primary" onclick="action();" /> </p>
         <p id="resultado"></p>

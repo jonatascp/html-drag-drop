@@ -10,3 +10,9 @@
     height: 60px;
     text-align: center;
 }
+
+#trash {
+    border: 1px solid red;
+    height: 60px;
+    text-align: center;
+}
